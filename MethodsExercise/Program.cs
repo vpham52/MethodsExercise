@@ -4,10 +4,11 @@ namespace MethodsExercise
 {
     public class Program
     {
-        static void Main(string[] args)
-        {
-            //Exercise 1: Story
 
+        // Exercise 1: Story
+
+        public static void MadLib()
+        {
             //Console.WriteLine("What is your first name?"); //output
             //var firstName = Console.ReadLine(); //input
 
@@ -31,36 +32,52 @@ namespace MethodsExercise
             //    $" One day, their pet {faveAnimal} got hold of it. " +
             //    $"After {numTreats} treats, their pet {faveAnimal} fell asleep. " +
             //    $"Upon further investigation, {firstName} realized they were wearing it all along.");
+        }
 
-            var sumAnswer = Add(num 1, num2);           
+        static void Main(string[] args)
+        {
+            // Method Call - Exercise 1
+            //MadLib();
+
+
+            // Exercise 2
+
+            var sumAnswer = Add(32.5, 54.6);
             Console.WriteLine(sumAnswer);
 
-            var productAnswer = Multiply(10, 2);
+            var differenceAnswer = Subtract(7,2);
+            Console.WriteLine(differenceAnswer);
+
+            var productAnswer = Multiply(56.3,22.9);
             Console.WriteLine(productAnswer);
 
+            var divisionAnswer = Divide(8, 6);
+            Console.WriteLine(divisionAnswer);
 
         }
 
-        // Exercise 2:
-        public static double Add(int num1, int num2)
+        //Exercise 2:
+        public static double Add(double num1, double num2)
         {
-           
-
-            double sum = num1 + num2;
-
-            return sum;
-
-
+            return num1 + num2; 
         }
 
-        public static double Multiply(int num1, int num2)
+        public static int Subtract(int num1, int num2)
         {
-            double product = num1 * num2;
-
-            return product;
+            return num1 - num2;
         }
 
+        public static double Multiply(double num1, double num2)
+        {            
+            return num1 * num2;
+        }
 
+        public static int Divide(int num1, int num2)
+        {
+            return num1 / num2; 
+        }
+
+        
 
     }
 }
